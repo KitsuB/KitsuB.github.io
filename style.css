@@ -11,13 +11,8 @@ header{
 
 .text {
   font-family: 'Agency FB';
-  font-size: 20px;
+  font-size: 30px;
   text-align: center;
-}
-
-.text h1 {
-  font-size: 40px;
-  font-weight: normal;
 }
 
 /*Socials Start*/
@@ -90,7 +85,7 @@ header{
 
 /*Grid End*/
 footer {
-  font-size: 15px;
+  font-size: 20px;
   text-align: center;
   padding-left: padding: 20px;
   padding-right: padding: 20px;
