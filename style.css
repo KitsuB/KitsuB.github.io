@@ -1,0 +1,97 @@
+body {
+  color: #222;
+  background-image: linear-gradient(45deg,#ffbb9f, #ff9fe2);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+header{
+  font-size: 70px;
+}
+
+.text {
+  font-family: 'Lexend Deca';
+  font-size: 20px;
+  text-align: center;
+}
+
+.text h1 {
+  font-size: 40px;
+  font-weight: normal;
+}
+
+/*Socials Start*/
+.column {
+  float: left;
+  width: 9%;
+  padding: 5px;
+}
+
+.column:hover {
+  opacity: 0.8;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.social {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+}
+
+/*Socials End*/
+/*Grid Start*/
+.headeritem {
+  grid-area: header;
+}
+
+.mainitem {
+  grid-area: main;
+}
+
+.specialitem {
+  grid-area: special;
+}
+
+.socialitem {
+  grid-area: social;
+}
+
+.footeritem {
+  grid-area: footer;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-rows: min-content 1fr;
+  grid-template-areas:
+    'header header header header header header'
+    'main main main main main main'
+    'special special special special special special'
+    'social social social social social social'
+    'footer footer footer footer footer footer';
+  grid-gap: 5px;
+  background-color: #e5e5e5;
+  padding: 8px;
+}
+
+.grid-container>div {
+  background-color: #FFFFFF;
+  text-align: center;
+  padding: 20px;
+  font-size: 20px;
+}
+
+/*Grid End*/
+footer {
+  font-size: 15px;
+  text-align: center;
+  padding-left: padding: 20px;
+  padding-right: padding: 20px;
+}
